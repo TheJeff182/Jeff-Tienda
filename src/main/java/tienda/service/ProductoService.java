@@ -1,4 +1,4 @@
-package tienda.services;
+package tienda.service;
 
 import tienda.domain.Producto;
 import tienda.repository.ProductoRepository;

@@ -1,7 +1,7 @@
 package tienda.controller;
 
-import tienda.services.CategoriaService;
-import tienda.services.ProductoService;
+import tienda.service.CategoriaService;
+import tienda.service.ProductoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package tienda.services;
+package tienda.service;
 
 import com.google.cloud.storage.BlobId;
 import com.google.cloud.storage.BlobInfo;

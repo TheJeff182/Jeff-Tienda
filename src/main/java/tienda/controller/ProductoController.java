@@ -1,8 +1,8 @@
 package tienda.controller;
 
 import tienda.domain.Producto;
-import tienda.services.CategoriaService;
-import tienda.services.ProductoService;
+import tienda.service.CategoriaService;
+import tienda.service.ProductoService;
 import jakarta.validation.Valid;
 import java.util.Locale;
 import java.util.Optional;
