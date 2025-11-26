@@ -58,19 +58,19 @@ public class ProductoController {
             productoService.delete(idProducto);
         } catch (IllegalArgumentException e) {
             titulo = "error"; // Captura la excepción de argumento inválido para el mensaje de "no existe"
-            detalle = "cateogira.error01";
+            detalle = "categoria.error01";
         } catch (IllegalStateException e) {
             titulo = "error"; // Captura la excepción de estado ilegal para el mensaje de "datos asociados"
-            detalle = "cateogira.error02";
+            detalle = "categoria.error02";
         } catch (Exception e) {
             titulo = "error";  // Captura cualquier otra excepción inesperada
-            detalle = "cateogira.error03";
+            detalle = "categoria.error03";
         }
         redirectAttributes.addFlashAttribute(titulo, messageSource.getMessage(detalle, null, Locale.getDefault()));
         return "redirect:/producto/listado";
     }
 
-    @GetMapping("/usuaio/modificar/{idUsuario}")
+    @GetMapping("/usuario/modificar/{idUsuario}")
     public String modificar(@PathVariable("idProducto") Integer idProducto, Model model, RedirectAttributes redirectAttributes) {
         Optional<Producto> productoOpt = productoService.getProducto(idProducto);
         if (productoOpt.isEmpty()) {
