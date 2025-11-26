@@ -71,4 +71,3 @@ public class RegistroController {
         return "/registro/salida";
     }
 }
-
